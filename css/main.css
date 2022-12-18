@@ -1,0 +1,203 @@
+* {
+    outline: 1px solid #f00;
+}
+
+.header {
+    background: #f7f7f7;
+}
+
+.header .inner {
+    position: relative;
+    display: flex;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.header .inner h1 {
+    text-align: center;
+    display: inline-block;
+    font-size: 0;
+}
+
+.header .inner .headLogo {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+}
+
+.header .inner .gnb {
+    /* position: absolute; */
+    margin: 0 auto;
+    /* left: 50%;
+    transform: translate(-50%, 0); */
+}
+
+.header .inner .gnb ul {
+    display: flex;
+    gap: 60px;
+    line-height: 100px;
+    justify-content: space-between;
+}
+
+.header .inner .gnb ul a {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900px;
+    color: #111;
+}
+
+.header .inner .util {
+    position: absolute;
+
+    right: 0;
+}
+
+.header .inner .util ul {
+    display: flex;
+    gap: 30px;
+    line-height: 100px;
+    justify-content: center;
+}
+
+.header .inner .util ul a {
+    display: block;
+}
+
+.mainVisual {
+    padding: 0 0 100px 0;
+    height: 570px;
+}
+
+.mainVisual .inner {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    top: 70%;
+}
+
+.mainVisual .visual_bottom {
+    position: absolute;
+    z-index: 999;
+    background-color: #002f87;
+    border-radius: 20px;
+}
+
+#prev {
+    background: url(../img/i_prev.svg) no-repeat center center/cover;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: 0 50px 0 0;
+    transition: 0.5s;
+
+
+}
+
+#prev:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+
+
+}
+
+#next {
+    background: url(../img/i_next.svg) no-repeat center center/cover;
+    width: 30px;
+    height: 30px;
+    border: none;
+    transition: 0.5s;
+}
+
+#next:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+
+}
+
+.mainVisual .slide figure {
+    position: relative;
+    height: 50vh;
+}
+
+.mainVisual .slide .sl_txt {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    top: 20%;
+    left: 0;
+    text-align: left;
+
+    text-shadow: 1px 1px 10px #fff;
+
+}
+
+.mainVisual .slide .sl_txt h2 {
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0 0 30px 0;
+    color: #333;
+
+}
+
+.mainVisual .slide .sl_txt span {
+
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+
+    color: #333;
+}
+
+.mainVisual .slide .sl_txt span a {
+    position: relative;
+}
+
+.mainVisual .slide .sl_txt span:hover a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 1px;
+    border-bottom: 1px solid #777;
+}
+
+.xi-arrow-right {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+
+
+
+.mainVisual .slide .sl_txt .sl_num {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainVisual .slide .sl_txt .sl_num .cur_num {
+    position: absolute;
+    bottom: 10%;
+}
+
+
+.mainVisual .slide .sl_img01 {
+    background: url(../img/mainSlide01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .slide .sl_img02 {
+    background: url(../img/mainSlide02.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .slide .sl_img03 {
+    background: url(../img/mainSlide03.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .slide .sl_img04 {
+    background: url(../img/mainSlide05.jpg) no-repeat center center/cover;
+}
