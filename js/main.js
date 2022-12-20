@@ -19,6 +19,16 @@ $(function () {
     });
 
 
+    // $('#seat').on('click', function () {
+    //     $(this).addClass('active');
+    // })
+
+
+
+    $('.banner_seat span').on('click', function () {
+        $('span').removeClass('on');
+        $(this).addClass('on');
+    });
 
     $('.top_btn a').click(function () {
         $('html, body').animate({

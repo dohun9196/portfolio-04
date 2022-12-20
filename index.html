@@ -61,7 +61,7 @@
 
 
         <main>
-            <section id="mainVisual" class="mainVisual">
+            <section id="mainV" class="mainVisual">
 
                 <div class="main_slide">
                     <figure class="slide01">
@@ -112,21 +112,25 @@
                 <div class="bannerWrap">
                     <div class="quick_banner">
                         <div class="banner_tit">
-                            <span>일반 예매</span>
-                            <span>마일리지 예매</span>
+                            <span><a href="">일반 예매</a></span>
+                            <span><a href="">마일리지 예매</a></span>
                         </div>
                         <div class="banner_main">
                             <div class="bmain_header">
-                                <span>왕복</span>
-                                <span>편도</span>
+                                <span><a href="#!">왕복</a></span>
+
+                                <span><a href="#!">편도</a></span>
                             </div>
                             <div class="bmain_content">
                                 <div class="main_starting">
                                     <span>출발지</span>
+                                    <input type="text" placeholder="입력하세요.">
                                     <p><a href="#!">검색</a></p>
                                 </div>
+                                <i class="xi-catched"></i>
                                 <div class="main_arrive">
                                     <span>도착지</span>
+                                    <input type="text" placeholder="입력하세요.">
                                     <p><a href="#!">검색</a></p>
                                 </div>
                             </div>
@@ -134,22 +138,44 @@
                                 <a href="#!">탑승일 선택</a>
                             </div>
                         </div>
-                        <div class="banner_passenger">승객 수
-                            <input type="text" placeholder="입력하세요.">
+                        <div class="banner_passenger">
+                            <a href="#!">
+                                <span>승객 수</span>
+                                <span>1명</span>
+                                <i class="xi-user"></i>
+                            </a>
+
+                            <!-- <input type="text" placeholder="입력하세요."> -->
                         </div>
-                        <div class="banner_seat">좌석 등급
-                            <ul>
-                                <li><a href="#!">등급 선택<i class="xi-arrow-down"></i></a>
-                                    <ul class="drop_menu">
-                                        <li><a href="">일반석</a></li>
-                                        <li><a href="">프레스티지석</a></li>
-                                        <li><a href="">일등석</a></li>
-                                    </ul>
-                                </li>>
-                            </ul>
+                        <div class="banner_seat">
+                            <span><a href="#!">일반석</a></span>
+                            <span><a href="#!">프레스티지석</a></span>
+                            <span><a href="#!">일등석</a></span>
                         </div>
 
-                        <div class="banner_search"><a href="#!">검색</a></div>
+                        <div class="banner_search">
+                            <a href="#!">검색</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="mainReservation">
+                <div class="inner">
+                    <div class="resrvation">
+                        <h2>
+                            <a href="#!"><img src="./img/i_booking.svg" alt=""> 예약 조회</a>
+                        </h2>
+                    </div>
+                    <div class="resrvation">
+                        <h2>
+                            <a href="#!"><img src="./img/i_checkin.svg" alt=""> 체크인</a>
+                        </h2>
+                    </div>
+                    <div class="resrvation">
+                        <h2>
+                            <a href="#!"><img src="./img/i_schedule.svg" alt=""> 항공편 현황</a>
+                        </h2>
                     </div>
                 </div>
 
