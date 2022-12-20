@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
@@ -57,77 +57,103 @@
                     </ul>
                 </div>
             </div>
-
         </header>
 
 
         <main>
-            <section class="mainVisual">
-                <div class="inner">
-                    <div class="visual_bottom">
-                        <button id="prev"></button>
-                        <button id="next"></button>
-                    </div>
-                    <div class="quick_banner">
-                        <div class="banner_tit">
-                            <span>예매</span>
-                            <span>마일리지 예매</span>
-                        </div>
-                        <div>
-                            <button>왕복</button>
-                            <button>편도</button>
-                        </div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <figure class="sl_img01">
-                        <div class="sl_txt">
+            <section id="mainVisual" class="mainVisual">
+
+                <div class="main_slide">
+                    <figure class="slide01">
+                        <div class="inner">
                             <h2>지금 갈 수 있는 여행지는 어디? 얼마?</h2>
-                            <span>
+                            <p>
                                 <a href="">자세히 보기 <i class="xi-arrow-right"></i></a>
-                            </span>
+                            </p>
                         </div>
                     </figure>
 
-                    <figure class="sl_img02">
-                        <div class="sl_txt">
+                    <figure class="slide02">
+                        <div class="inner">
                             <h2>두꺼운 외투는 맡기고 가벼운 마음으로<br />
                                 떠나보세요!</h2>
-                            <span>
+                            <p>
                                 <a href="">자세히 보기 <i class="xi-arrow-right"></i></a>
-                            </span>
+                            </p>
                         </div>
                     </figure>
-
-                    <figure class="sl_img03">
-                        <div class="sl_txt">
+                    <figure class="slide03">
+                        <div class="inner">
                             <h2>여행지별 입국 요건,<br />
                                 이제 지도에서도 확인하실 수 있습니다.</h2>
-                            <span>
+                            <p>
                                 <a href="">자세히 보기 <i class="xi-arrow-right"></i></a>
-                            </span>
+                            </p>
                         </div>
                     </figure>
-
-                    <figure class="sl_img04">
-                        <div class="sl_txt">
+                    <figure class="slide04">
+                        <div class="inner">
                             <h2>알고보면 더 매력적인, 대한항공카드<br />
                                 가이드!</h2>
-                            <span>
+                            <p>
                                 <a href="">자세히 보기 <i class="xi-arrow-right"></i></a>
-                            </span>
+                            </p>
                         </div>
                     </figure>
                 </div>
 
+                <div class="mainBtn">
+                    <div class="visual_bottom">
+                        <button id="prev" class="slick_prev"></button>
+                        <button id="next" class="slick_next"></button>
+                    </div>
+                </div>
+
+                <div class="bannerWrap">
+                    <div class="quick_banner">
+                        <div class="banner_tit">
+                            <span>일반 예매</span>
+                            <span>마일리지 예매</span>
+                        </div>
+                        <div class="banner_main">
+                            <div class="bmain_header">
+                                <span>왕복</span>
+                                <span>편도</span>
+                            </div>
+                            <div class="bmain_content">
+                                <div class="main_starting">
+                                    <span>출발지</span>
+                                    <p><a href="#!">검색</a></p>
+                                </div>
+                                <div class="main_arrive">
+                                    <span>도착지</span>
+                                    <p><a href="#!">검색</a></p>
+                                </div>
+                            </div>
+                            <div class="main_check">
+                                <a href="#!">탑승일 선택</a>
+                            </div>
+                        </div>
+                        <div class="banner_passenger">승객 수
+                            <input type="text" placeholder="입력하세요.">
+                        </div>
+                        <div class="banner_seat">좌석 등급
+                            <ul>
+                                <li><a href="#!">등급 선택<i class="xi-arrow-down"></i></a>
+                                    <ul class="drop_menu">
+                                        <li><a href="">일반석</a></li>
+                                        <li><a href="">프레스티지석</a></li>
+                                        <li><a href="">일등석</a></li>
+                                    </ul>
+                                </li>>
+                            </ul>
+                        </div>
+
+                        <div class="banner_search"><a href="#!">검색</a></div>
+                    </div>
+                </div>
 
             </section>
-
-
-
         </main>
 
 

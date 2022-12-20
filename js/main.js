@@ -1,16 +1,21 @@
 $(function () {
 
-    $('.slide').slick({
+    $('.main_slide').slick({
         dots: false,
-        autoplay: false,
+        // autoplay: true,
         arrows: true,
 
-        autoplaySpeed: 2000,
-        pauseOnHover: false,
+        autoplaySpeed: 4000,
+        pauseOnFocus: false,
         pauseOnFocus: false,
         prevArrow: $('#prev'),
         nextArrow: $('#next'),
 
+
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
     });
 
 
