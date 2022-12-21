@@ -18,15 +18,43 @@ $(function () {
         cssEase: 'linear'
     });
 
+    $('.trip_slide').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
 
-    // $('#seat').on('click', function () {
-    //     $(this).addClass('active');
-    // })
+        prevArrow: $('#Trip_prev'),
+        nextArrow: $('#Trip_next'),
+    });
 
 
 
+
+    $('.banner_bottom a').on('click', function () {
+        var banner = $('.bannerWrap');
+        $(this).toggleClass('on')
+
+        if ($(this).hasClass('on')) {
+            $(banner).removeClass('on');
+        } else {
+            $(banner).addClass('on');
+        }
+    });
+
+    $('.banner_tit span').on('click', function () {
+        var tit = $('.banner_tit span');
+        $(tit).removeClass('on');
+        $(this).addClass('on');
+    });
+
+    $('.bmain_header span').on('click', function () {
+        var bmain = $('.bmain_header span');
+        $(bmain).removeClass('on');
+        $(this).addClass('on');
+    });
     $('.banner_seat span').on('click', function () {
-        $('span').removeClass('on');
+        var seat = $('.banner_seat span');
+        $(seat).removeClass('on');
         $(this).addClass('on');
     });
 
