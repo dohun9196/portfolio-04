@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid #f00;
+    -outline: 1px solid #f00;
 }
 
 .header {
@@ -146,7 +146,7 @@
     position: absolute;
     width: 1200px;
     margin: 0 auto;
-    top: 70%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, 0%);
 }
@@ -185,6 +185,15 @@
     transform: scale(1.4);
 }
 
+.visual_bottom .num {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
 
 
 .bannerWrap {
@@ -528,6 +537,7 @@
 
 .xi-angle-up {
     margin: 0 5px 0 0;
+    transition: 0.5s;
 }
 
 .banner_bottom a.on .xi-angle-up {
@@ -593,7 +603,19 @@
 
 .mainTrip {
     padding: 100px 0;
-    background: #ddd;
+    position: relative;
+    overflow: hidden;
+}
+
+.mainTrip .tripBg {
+    position: absolute;
+    bottom: 0;
+    background: #f3f4f8;
+    height: 300px;
+    width: 9999px;
+    z-index: -1;
+    margin: 0 auto;
+
 }
 
 .mainTrip .inner {
@@ -613,19 +635,32 @@
 .mainTrip .trip_slide {
     z-index: 2;
     margin: 0 0 50px 0;
+
 }
 
 .mainTrip .trip_slide figure {
+    border: 1px solid #fff;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.mainTrip .trip_slide figure img {
+    transition: 0.5s;
+}
+
+.mainTrip .trip_slide img:hover {
+    transform: scale(1.2);
+}
+
+.slick-slide .mainTrip .trip_slide figure {
     position: relative;
-    margin: 0 5px;
-
-
 }
 
 .mainTrip .trip_slide figure .Tslide_txt {
     position: absolute;
     top: 10%;
     margin: 0 10px;
+    text-shadow: 1px 1px 1px #fff;
 }
 
 .Tslide_txt p {
@@ -654,6 +689,7 @@
     top: 50%;
     transform: translate(0 -50%);
 
+
 }
 
 .mainTrip .inner .arrow_btn {
@@ -663,25 +699,29 @@
 
 .arrow_btn .trip_prev {
     position: absolute;
-    left: 0%;
-    transform: translate(-100%, 0);
-    width: 50px;
-    height: 50px;
+    top: 50%;
+    left: 31px;
+    transform: translate(-100%, -100%);
+    width: 30px;
+    height: 60px;
     border: none;
-    background: url(../img/i_prev.svg) no-repeat center center/cover;
 
-
+    background: url(../img/button_left.svg) no-repeat center center/cover;
+    background-size: 30px 60px;
+    z-index: 555;
 }
 
 .arrow_btn .tirp_next {
     position: absolute;
-
-    right: 0%;
-    transform: translate(100%, 0);
-    width: 50px;
-    height: 50px;
+    top: 50%;
+    right: 31px;
+    transform: translate(100%, -100%);
+    width: 30px;
+    height: 60px;
     border: none;
-    background: url(../img/i_next.svg) no-repeat center center/cover;
+    background: url(../img/button_right.svg) no-repeat center center/cover;
+    background-size: 30px 60px;
+    z-index: 555;
 }
 
 .mainTrip .inner .trip_bottom {}
@@ -700,20 +740,24 @@
     position: relative;
     display: block;
     background: #fff;
+    border: 1px solid#fff;
+    transition: 1s;
 }
 
 .trip_bottom .inner .tripB01 a::after {
     content: "\e90b";
+    font-family: xeicon;
     position: absolute;
     display: inline-block;
     font-size: 20px;
     top: 50%;
-    left: 80%;
-    transform: translate(20%, -50%);
+    left: 90%;
+    transform: translate(10%, -50%);
 }
 
 .trip_bottom .inner .tripB01 a:hover {
     border: 1px solid #0064de;
+
 }
 
 
@@ -733,5 +777,268 @@
     font-weight: 500;
     color: #666;
     padding: 0 30px 0 20px;
+
+}
+
+.mainEasy {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+
+}
+
+.mainEasy .easyBg {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(5px, -20%);
+    background: #dcf6fd;
+    height: 200px;
+    width: 9999px;
+    z-index: -1;
+    margin: 0 auto;
+    border-radius: 0 0 15px 0;
+
+}
+
+.mainEasy .inner {
+
+    display: flex;
+    gap: 30px;
+
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.mainEasy .inner .easyImg {
+    flex: 1;
+}
+
+.mainEasy .inner .easyTxt {
+    position: relative;
+    flex: 1;
+}
+
+.mainEasy .inner .easyTxt article {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainEasy .inner .easyTxt h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 50px;
+    margin: 0 0 40px 0;
+    color: #000;
+}
+
+.mainEasy .inner .easyTxt p {
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 40px 0;
+
+}
+
+.mainEasy .inner .easyTxt a {
+    position: relative;
+    /* display: block; */
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    border-bottom: 1px solid #fff;
+    transition: 0.5s;
+}
+
+.mainEasy .inner .easyTxt a:hover {
+    border-bottom: 1px solid #0064de;
+
+}
+
+
+.mainEasy .inner .easyTxt a::after {
+    content: "\e90b";
+    position: absolute;
+    display: inline-block;
+
+    font-family: xeicon;
+
+    margin: 0 0 0 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.mainService {
+    padding: 100px 0;
+}
+
+.mainService .inner {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainService .inner h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+    color: #000;
+}
+
+.mainService .inner .serviceLine {
+
+    display: flex;
+    /* gap: 30px; */
+    justify-content: space-around;
+    padding: 30px 10px;
+    border: 1px solid #ddd;
+}
+
+.mainService .inner .serviceLine a {
+    display: block;
+}
+
+.mainService .inner .serviceLine p {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+}
+
+.serviceLine .lines {
+    position: relative;
+}
+
+.serviceLine .lines a::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(5000%, -50%);
+    height: 50px;
+    border-right: 1px solid #ddd;
+    margin: 0 auto;
+
+}
+
+.serviceLine .lines:last-child a:after {
+    content: none;
+}
+
+.footer {
+    border-top: 1px solid #ddd;
+    background-color: #f3f4f8;
+}
+
+.footer .top {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+
+}
+
+.footer .top .topTxt {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+
+}
+
+.footer .top .topTxt .txtList {
+    flex: 1;
+    min-width: fit-content;
+}
+
+.topTxt .txtList p {
+    font-size: 17px;
+    font-weight: 700;
+    padding: 0 0 30px 0;
+}
+
+.topTxt .txtList ul li a {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+.topTxt .con {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.topTxt .con::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-3000%, 0%);
+    height: 197px;
+    border-right: 1px solid #ddd;
+}
+
+.topTxt .con a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #666;
+}
+
+.topTxt .con i {
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+
+}
+
+.footer .bottom {
+    border-top: 1px solid #ddd;
+
+    background: #fff;
+}
+
+.footer .bottom .inner {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+}
+
+.bottom .inner .leftcontent {}
+
+
+.leftcontent span,
+.leftcontent strong {
+    position: relative;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 25px;
+    font-style: normal;
+    margin: 0 40px 0 0;
+    color: #666;
+}
+
+.copy {
+
+    width: 1200px;
+    margin: 0 auto;
+
+    padding: 10px 0;
+}
+
+.copy p {
+    color: #666;
+    line-height: 1.5;
 
 }
