@@ -2,20 +2,18 @@ $(function () {
 
     $('.main_slide').slick({
         dots: false,
-        // autoplay: true,
+        autoplay: true,
         arrows: true,
 
         autoplaySpeed: 4000,
-        pauseOnFocus: false,
-        pauseOnFocus: false,
         prevArrow: $('#prev'),
         nextArrow: $('#next'),
 
 
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
+        // infinite: true,
+        // speed: 500,
+        // fade: false,
+        // cssEase: 'linear',
     });
 
     $('.trip_slide').slick({
