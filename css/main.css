@@ -1033,14 +1033,14 @@
     font-weight: 100;
     line-height: 25px;
     font-style: normal;
-    margin: 0 30px 0 0;
-    color: #666;
+    margin: 0 5px 0 0;
+    color: #444;
 }
 
 .leftcontent span::after {
     content: "";
     display: inline-block;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 10px;
     height: 6.5px;
     border: 1px solid #ddd;
 }
