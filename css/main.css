@@ -136,6 +136,17 @@
     position: relative;
     width: max-content;
     display: block;
+
+}
+
+.main_slide .inner a::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    transition: 0.5s;
+
 }
 
 .main_slide .inner a:hover::after {
@@ -144,7 +155,8 @@
     display: block;
     width: 120px;
     height: 1px;
-    background: #333;
+    background: #293978;
+
 }
 
 .mainVisual .mainBtn {
