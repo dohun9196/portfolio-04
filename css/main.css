@@ -151,9 +151,9 @@
     position: absolute;
     width: 1200px;
     margin: 0 auto;
-    top: 90%;
+    top: 80%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -20%);
 }
 
 .mainVisual .mainBtn .visual_bottom {
